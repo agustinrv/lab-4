@@ -1,0 +1,29 @@
+npm install firebase @angular/fire
+
+
+ng g c componentes/login //crear componente login 
+
+ng g s serices/mensajeFire //crear servicio para fire
+ng g s serices/mensajeReal //crear servicio para bd en tiempo real
+
+agregar import al app module => AngularFireModule.initializeApp(environment.firebaseConfig)
+
+despues importar 
+import {AngularFireDatabase, AngularFireList} from "@angular/fire/database";
+
+
+AngularfireList contiene AngularFireCollection<tipo> para poder obter acceso a los datos
+que tenemos guardados en firebase, mientras que AngularFirestore es el encargado de establecer la conexion
+de la siguiente manera
+
+public rutaDeLaColeccion = "/mensajeFire"; //ruta dentro de firebase
+  public referenciaAlaColeccion :AngularFirestoreCollection<Mensaje>; //con este elemento accedemos a los distinos metodos de firebase (agregar => add(),borrar =>delete() ,actualizar => update() (delete es lista.doc(id).delete()
+                                 :AngularFireList es otro tipo de bd creo que se maneja con otros metodos pero es mas rapida
+  
+
+   constructor(private bd: AngularFirestore)
+   { 
+      this.referenciaAlaColeccion = bd.collection(this.rutaDeLaColeccion);
+   }
+   
+   

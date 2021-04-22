@@ -1,0 +1,36 @@
+<style>
+    input{ margin-left: 1%;}
+</style>
+
+
+<br>
+
+<label for="edadUno">Edad Uno</label>
+<input type="number" id="edadUno" [(ngModel)]="edadUno"  >
+<br>
+<label for="edadDos">Edad Dos</label>
+<input type="number" id="edadDos" [(ngModel)]="edadDos" >
+
+<br>
+<br>
+
+<button (click)="SumarEdades()">Sumar Edades</button>
+<button (click)="CalcularPromedio()">Calcular Promedio</button>
+
+<br><br>
+<label for="">Promedio= </label>{{promedio}}
+<br><br>
+<label for="">Edad Total= </label>{{edadTotal}}
+
+
+<br><br><br>
+
+<app-bienvenido></app-bienvenido>
+
+<app-login></app-login>
+
+
+
+<router-outlet></router-outlet>
+
+<footer></footer>

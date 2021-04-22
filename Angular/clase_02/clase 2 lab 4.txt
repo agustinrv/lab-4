@@ -1,0 +1,12 @@
+ng new myApp //crea app
+
+ng g c componentes/login //crea componente "login" en componentes/login
+
+------------------------
+BD Documentales: noSQL
+trabajan con json
+
+no se relacionan
+vamos a repliar datos, con estas bases de datos
+
+

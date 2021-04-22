@@ -1,0 +1,17 @@
+<style>
+    input{ margin-left: 1%;}
+</style>
+
+<label for="textUsuario">Usuario</label>
+<input type="text" id="textUsuario" [(ngModel)]="usuario">
+<br><br>
+<label for="textContraseña">Contraseña</label>
+<input type="text" id="textContraseña" [(ngModel)]="contrasenia" >
+<app-error [usuarioError]="usuario" [contraseniaError]="contrasenia"></app-error>
+<br>
+<br>
+<button (click)="Ingresar()"  >Ingresar</button>
+
+
+
+
