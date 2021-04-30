@@ -1,0 +1,36 @@
+<br>
+
+
+
+<section class="container" >
+    <h6 style="font-size: 30px;">Login</h6>
+    <div class="form-control h-100 pb-3 bg-primary ">
+        <label for="textCorreo" class="text-white">Correo:</label>
+        <div class="form-row ">
+            <div class="col input-group mb-2">
+                <label for="textCorreo" class="mt-1 fas fa-envelope input-group-text"></label>
+                <input type="text" id="textCorreo" class="form-control form-text"  placeholder="Ingrese su correo">
+            </div>
+        </div>
+        
+        
+        <label for="textContraseña" class="text-white">Contraseña:</label>
+        <div class="form-row ">
+            <div class="col input-group mb-2">
+                <label for="textContraseña" class="mt-1 fas fa-key input-group-text"></label>
+                <input type="password" id="textContraseña"class="form-control form-text"  placeholder="Ingrese su correo">
+            </div>
+        </div>
+        
+        <br>
+        <button class="btn btn-success btn-block" (click)="Logearse()">Ingresar</button>
+        <button class="btn btn-warning btn-block"  >Inicio Rapido</button>
+    </div>
+
+    <br>
+    <p>No esta registrado?</p> 
+    <p>Puede registrarse tocando <a routerLink="/registro">aqui</a></p>
+</section>
+
+
+
